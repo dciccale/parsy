@@ -17,7 +17,7 @@ parsy.on('-h', function (option, value) {
 
 parsy.on('--file', function (option, value) {
   // simple check if the value passed to --file are js files
-  if (!/\.js$/.value) {
+  if (!/\.js$/.test(value)) {
     console.log('Only .js files can be passed using the --file option!');
   }
 });
