@@ -1,0 +1,32 @@
+{
+  "name": "parsy",
+  "description": "Tiny command line options parser for node.js in CoffeeScript.",
+  "version": "0.0.1",
+  "author": "Denis Ciccale (@tdecs)",
+  "homepage": "http://github.com/dciccale/parsy",
+  "repositories": [
+    {
+      "type": "git",
+      "url": "https://github.com/dciccale/parsy.git"
+    }
+  ],
+  "bugs": {
+    "url": "http://github.com/dciccale/parsy/issues"
+  },
+  "licenses": [
+   {
+     "type": "MIT",
+     "url": "http://github.com/dciccale/parsy/blob/master/LICENSE.txt"
+   }
+  ],
+  "main": "./lib/parsy",
+  "bin": {
+    "parsy": "./bin/parsy"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "keywords": ["options", "parser", "node", "parsy", "coffeescript"],
+  "engines": [
+    "node >= 0.6.0"
+  ]
+}
