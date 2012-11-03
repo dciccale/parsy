@@ -1,4 +1,4 @@
-exports.parsy = ->
+module.exports = (->
   options = {}
   opt = null
   process.argv.forEach (arg) ->
@@ -34,3 +34,4 @@ exports.parsy = ->
       if options[opt]?
         callback opt, options[opt]
   }
+)()

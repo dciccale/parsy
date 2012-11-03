@@ -15,7 +15,7 @@ It automatically parse `process.argv` so you just have to "subscribe" for the op
 ### Example
 
 ```javascript
-var parsy = require('parsy').parsy();
+var parsy = require('parsy');
 
 parsy.on('-h', function (option, value) {
   console.log('Hey give me some help here');
