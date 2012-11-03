@@ -19,7 +19,6 @@ exports.parsy = ->
       else arg = Number arg unless isNaN arg
 
       # generate options object
-
       if typeof options[opt] is 'boolean'
         options[opt] = arg
       else if Array.isArray options[opt]

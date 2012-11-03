@@ -15,7 +15,7 @@ It automatically parse `process.argv` so you just have to "subscribe" for the op
 ### Example
 
 ```javascript
-var parsy = require('parsy');
+var parsy = require('parsy').parsy();
 
 parsy.on('-h', function (option, value) {
   console.log('Hey give me some help here');
@@ -31,6 +31,14 @@ parsy.on('--file', function (option, value) {
     console.log('Only .js files can be passed using the --file option!');
   }
 });
+```
+
+See parsy options object with all options passed
+
+```javascript
+parsy.options;
+// e.g. 
+// { node: '/Users/Denis/Desktop/test_parsy/test.js', '-h': true, '--file': 'asd.txt' }
 ```
 
 ## License
