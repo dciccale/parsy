@@ -38,7 +38,7 @@ See parsy options object with all options passed
 ```javascript
 parsy.options;
 // e.g. 
-// { node: '/Users/Denis/Desktop/test_parsy/test.js', '-h': true, '--file': 'asd.txt' }
+// { node: 'script.js', '-h': true, '--file': 'file1.js' }
 ```
 
 ## License
