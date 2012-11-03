@@ -2,6 +2,12 @@
 
 Tiny command line options parser for node.js in CoffeeScript.
 
+## Installation
+
+```bash
+$ npm install parsy
+```
+
 ## Usage
 
 It automatically parse `process.argv` so you just have to "subscribe" for the options you want.
