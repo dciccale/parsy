@@ -36,7 +36,7 @@ parsy.on('--file', function (option, value) {
 See parsy options object with all options passed
 
 ```javascript
-parsy.options;
+console.log(parsy.options);
 // e.g. 
 // { node: 'script.js', '-h': true, '--file': 'file1.js' }
 ```
