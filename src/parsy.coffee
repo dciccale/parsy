@@ -1,7 +1,8 @@
 module.exports = (->
   options = {}
   opt = null
-  process.argv.forEach (arg) ->
+  processArgv = process.argv
+  processArgv.forEach (arg) ->
 
     # get option
     if /^(-|--)/.test(arg) or not opt
@@ -31,7 +32,7 @@ module.exports = (->
   {
     options: options
     on: (opt, callback) ->
-      if options[opt]? or opt is ''
+      if options[opt]? or opt is '' and processArgv.length is 2
         callback opt, options[opt]
   }
 )()
