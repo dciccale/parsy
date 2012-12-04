@@ -31,7 +31,7 @@ module.exports = (->
   {
     options: options
     on: (opt, callback) ->
-      if options[opt]? or !opt
+      if options[opt]? or opt is ''
         callback opt, options[opt]
   }
 )()
