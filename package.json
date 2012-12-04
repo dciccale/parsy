@@ -1,7 +1,7 @@
 {
   "name": "parsy",
   "description": "Tiny command line options parser for node.js in CoffeeScript.",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "Denis Ciccale (@tdecs)",
   "homepage": "http://github.com/dciccale/parsy",
   "repositories": [
