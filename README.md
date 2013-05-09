@@ -1,4 +1,4 @@
-# parsy
+# parsy [![NPM version](https://badge.fury.io/js/css2stylus.png)](http://badge.fury.io/js/parsy)
 
 Tiny command line options parser for node.js in CoffeeScript.
 
