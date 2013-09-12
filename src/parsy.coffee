@@ -27,12 +27,10 @@ module.exports = (->
       else
         options[opt] = [options[opt], arg]
 
-
   # return on method for subscribing to options
-  {
-    options: options
-    on: (opt, callback) ->
-      if options[opt]? or opt is '' and processArgv.length is 2
-        callback opt, options[opt]
-  }
+  options: options
+  on: (opt, callback) ->
+    if options[opt]? or opt is '' and processArgv.length is 2
+      callback opt, options[opt]
+    return @
 )()
