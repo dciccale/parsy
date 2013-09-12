@@ -17,34 +17,34 @@ It automatically parse `process.argv` so you just have to "subscribe" for the op
 ```javascript
 var parsy = require('parsy');
 
-// 'listen' if user calls your script without options
-parsy.on('', function () {
-  console.log('You must pass some options (or not)');
-});
+// register options
+parsy
+  // no options passed
+  .on('', function () {
+    console.log('Enter option or -h for help');
+  })
+  // script -h
+  .on('-h', function (option, value) {
+    console.log('Hey give me some help here');
+  })
+  // script --file file1.js
+  .on('--file', function (option, value) {
+    // if no files passed show a message
+    if (!value) {
+      console.log('Usage: --file <file1.js file2.js>');
 
-// script -h
-parsy.on('-h', function (option, value) {
-  console.log('Hey give me some help here');
-});
-
-// script --file file1.js
-parsy.on('--file', function (option, value) {
-  // if no files passed show a message
-  if (!value) {
-    console.log('Usage: --file <file1.js file2.js>');
-
-  // simple check if the value passed to --file are js files
-  } else if (!/\.js$/.test(value)) {
-    console.log('Only .js files can be passed using the --file option!');
-  }
-});
+    // simple check if the value passed to --file are js files
+    } else if (!/\.js$/.test(value)) {
+      console.log('Only .js files can be passed using the --file option!');
+    }
+  });
 ```
 
 See parsy options object with all options passed
 
 ```javascript
 console.log(parsy.options);
-// e.g.
+// example
 // { node: 'script.js', '-h': true, '--file': 'file1.js' }
 ```
 
