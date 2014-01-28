@@ -4,12 +4,11 @@
   "version": "0.1.2",
   "author": "Denis Ciccale (@tdecs)",
   "homepage": "http://github.com/dciccale/parsy",
-  "repositories": [
-    {
-      "type": "git",
-      "url": "https://github.com/dciccale/parsy.git"
-    }
-  ],
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dciccale/parsy.git"
+  }
   "bugs": {
     "url": "http://github.com/dciccale/parsy/issues"
   },
